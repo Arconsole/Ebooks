@@ -5,18 +5,110 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Arc's Ebooks</title>
+	<!-- 引入 Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@700&display=swap"
+		rel="stylesheet">
+	<style>
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			background-color: #f7f8fa;
+		}
+
+		body {
+			font-family: 'Roboto', sans-serif;
+			color: #333;
+		}
+
+		#artic {
+			max-width: 800px;
+			margin: 50px auto;
+			background-color: #ffffff;
+			padding: 40px;
+			border-radius: 15px;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+
+		h1 {
+			font-family: 'Playfair Display', serif;
+			font-size: 2.5em;
+			margin-bottom: 10px;
+			color: #2c3e50;
+		}
+
+		h2 {
+			font-size: 1.5em;
+			margin-bottom: 30px;
+			color: #34495e;
+		}
+
+		a {
+			display: inline-block;
+			margin: 10px 10px;
+			padding: 12px 25px;
+			background-color: #3498db;
+			color: white;
+			text-decoration: none;
+			border-radius: 25px;
+			font-size: 1.2em;
+			transition: background-color 0.3s ease;
+		}
+
+		a:hover {
+			background-color: #2980b9;
+		}
+
+		#bottom-text {
+			margin-top: auto;
+			text-align: center;
+			font-size: 18px;
+			color: #7f8c8d;
+			padding-bottom: 20px;
+		}
+
+		/* 响应式设计，适应不同屏幕 */
+		@media (max-width: 768px) {
+			#artic {
+				padding: 20px;
+				margin: 20px;
+			}
+
+			h1 {
+				font-size: 2em;
+			}
+
+			h2 {
+				font-size: 1.2em;
+			}
+
+			a {
+				font-size: 1em;
+				padding: 10px 20px;
+			}
+		}
+	</style>
 </head>
 
 <body>
-	<h1>Hello</h1>
-	<h2>这是一个电子图书馆</h2>
 
-	<h2><a href="./mathsAndPhysics.html" target="_blank" rel="noopener noreferrer">数理科学</a></h2>
-	<h2><a href="./computer.html" target="_blank" rel="noopener noreferrer">计算机类</a></h2>
-	<h2><a href="./psychology.html" target="_blank" rel="noopener noreferrer">心理学</a></h2>
+	<div id="artic">
+		<h1>Welcome to Arc's Ebooks</h1>
+		<h2>这是一个电子图书站</h2>
+		<a href="./mathsAndPhysics.html" target="_blank" rel="noopener noreferrer">数理科学</a>
+		<a href="./computer.html" target="_blank" rel="noopener noreferrer">计算机类</a>
+		<a href="./psychology.html" target="_blank" rel="noopener noreferrer">心理学</a>
+		<a href="./ReadEN.html" target="_blank" rel="noopener noreferrer">英文阅读</a>
+	</div>
 
-
-	本站成立于2024/9/21 Powered by Arc Nexus
+	<div id="bottom-text">
+		本站成立于2024/9/21 Powered by Arc Nexus
+	</div>
 
 </body>
 
